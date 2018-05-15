@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'anironcregular';
+    src: url('anicm___-webfont.woff2') format('woff2'),
+         url('anicm___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  font-family: 'Aniron', 'fantasy';
+}
+
+.navigation {
+  background-color: orange !important;
+}
+
+.navText {
+  color: white !important;
+}
+
+.footer {
+  background-color: orange;
+  color: white;
+  height: 180px;
+  width: 100vw;
+  display: flex; /* contexte sur le parent */
+  flex-direction: column; /* direction d'affichage verticale */
+  justify-content: center; /* alignement vertical */
+}
+
+.precious {
+  display: flex;
+}
+
+.title {
+  margin: auto;
+  text-align: center;
+}
+
+
+/* ajout SCSS */
+
+.smallRing {
+  background: none;
+  border-radius: 50%;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  border: 7px solid orange;
+  box-shadow: 5px 5px 4px grey inset, 5px 5px 4px grey;
+}
+
+.bigRing {
+  background: none;
+  border-radius: 50%;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border: 12px solid yellow;
+  box-shadow: 8px 8px 7px grey inset, 8px 8px 7px grey;
+}
+
+.ring_imbricate-1 {
+  background: none;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 6px solid #333131;
+  box-shadow: 3px 3px 3px #332d2d inset, 3px 3px 3px #332d2d;
+  margin-left: -30px;
+}
+
+.ring_imbricate-2 {
+  background: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 7px solid #333131;
+  box-shadow: 4px 4px 4px #332d2d inset, 4px 4px 4px #332d2d;
+  margin-left: -30px;
+}
+
+.ring_imbricate-3 {
+  background: none;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 8px solid #333131;
+  box-shadow: 5px 5px 5px #332d2d inset, 5px 5px 5px #332d2d;
+  margin-left: -30px;
+}
+
+.ring_imbricate-4 {
+  background: none;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 9px solid #333131;
+  box-shadow: 6px 6px 6px #332d2d inset, 6px 6px 6px #332d2d;
+  margin-left: -30px;
+}
+
+.ring_imbricate-5 {
+  background: none;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 10px solid #333131;
+  box-shadow: 7px 7px 7px #332d2d inset, 7px 7px 7px #332d2d;
+  margin-left: -30px;
+}
+
+.ring_imbricate-6 {
+  background: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 11px solid #333131;
+  box-shadow: 8px 8px 8px #332d2d inset, 8px 8px 8px #332d2d;
+  margin-left: -30px;
+}

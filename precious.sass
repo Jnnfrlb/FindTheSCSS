@@ -1,0 +1,45 @@
+$ring: orange;
+$shadow: grey;
+
+@mixin ring {
+  background: none;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.smallRing {
+  @include ring;
+  width: 80px;
+  height: 80px;
+  border: 7px solid $ring;
+  box-shadow:
+    5px 5px 4px $shadow inset,
+    5px 5px 4px $shadow;
+}
+
+.bigRing {
+  $ring: yellow;
+  @include ring;
+  width: 200px;
+  height: 200px;
+  border: 12px solid $ring;
+  box-shadow:
+    8px 8px 7px $shadow inset,
+    8px 8px 7px $shadow;
+}
+
+@for $i from 1 through 6 {
+  .ring_imbricate-#{$i} {
+    $ring: #333131;
+    $shadow: #332d2d;
+    background: none;
+    width: 70px + $i*5;
+    height: 70px + $i*5;
+    border-radius: 50%;
+    border: 5px + $i solid $ring;
+    box-shadow:
+      2px +$i 2px + $i 2px+ $i $shadow inset,
+      2px +$i 2px + $i 2px+$i $shadow;
+    margin-left: -30px;
+  }
+}
